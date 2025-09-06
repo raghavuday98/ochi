@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="fixed z-[999] w-full px-8 md:px-20 py-8 font-['Neue_Montreal'] flex justify-between items-center">
+    <div className="fixed z-[999] w-full  h-[10vh] px-8 md:px-20 py-8 font-['Neue_Montreal'] flex justify-between items-center backdrop-blur-3xl">
       <div className="logo text-white">
         {/* Simplified logo for better rendering */}
         <h1 className="text-2xl font-semibold">ochi</h1>
