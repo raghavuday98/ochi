@@ -2,7 +2,7 @@ import React from "react";
 
 function Cards() {
   return (
-    <div className="flex flex-col md:flex-row items-center px-4 md:px-32 gap-5 w-full py-10 md:py-0 md:h-screen bg-zinc-100">
+    <div className="flex flex-col md:flex-row items-center px-4 md:px-32 gap-5 w-full py-10 md:py-0 md:h-screen bg-zinc-900">
       {/* Card 1 */}
       <div className="cardcontainer w-full md:w-1/2 h-[50vh]">
         <div className="card relative flex items-center justify-center w-full h-full rounded-xl bg-[#004d43]">
