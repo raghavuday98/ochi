@@ -2,13 +2,13 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="flex gap-5 w-full h-screen bg-zinc-900 p-20 font-['Founders Grotesk X-Cond Lt']">
-      <div className='w-1/2 h-full flex flex-col justify-between '>
+    <div className="flex flex-col md:flex-row gap-6 md:gap-5 w-full min-h-[60vh] md:h-screen bg-zinc-900 p-6 md:p-20 font-['Founders Grotesk X-Cond Lt']">
+      <div className='w-full md:w-1/2 h-auto md:h-full flex flex-col justify-between'>
         <div className="heading">
-          <h1 className="text-[8vw] font-semibold uppercase leading-none -mb-5 tracking-tighter">
+          <h1 className="text-4xl md:text-[8vw] font-semibold uppercase leading-none -mb-2 md:-mb-5 tracking-tighter">
             Eye
           </h1>
-          <h1 className="text-[8vw] font-semibold uppercase leading-none -mb-5 tracking-tighter">
+          <h1 className="text-4xl md:text-[8vw] font-semibold uppercase leading-none -mb-2 md:-mb-5 tracking-tighter">
             Opening
           </h1>
         </div>
@@ -41,17 +41,15 @@ function Footer() {
           ></path>
         </svg>
       </div>
-      <div className="w-1/2 ">
-        <h1 className="text-[5vw] font-semibold uppercase leading-none -mb-5">
+      <div className="w-full md:w-1/2 mt-8 md:mt-0">
+        <h1 className="text-2xl md:text-[5vw] font-semibold uppercase leading-none -mb-2 md:-mb-5">
             Presentations
-          </h1>
-          <div className="dets font-['Neue Montreal'] mt-10">
-            <a className="block text-xl font-light" href="">Facebook</a>
-            <a className="block text-xl font-light" href="">Instagram</a>
-            <a className="block text-xl font-light" href="">Twitter</a>
-            <a href=""></a>
-            <a href=""></a>
-          </div>
+        </h1>
+        <div className="dets font-['Neue Montreal'] mt-6 md:mt-10">
+          <a className="block text-base md:text-xl font-light" href="">Facebook</a>
+          <a className="block text-base md:text-xl font-light" href="">Instagram</a>
+          <a className="block text-base md:text-xl font-light" href="">Twitter</a>
+        </div>
       </div>
     </div>
   );
