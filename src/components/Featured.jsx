@@ -26,16 +26,16 @@ function Featured() {
             onHoverEnd={() => handleHoverEnd(0)}
             className="cardcontainer relative w-full md:w-1/2 h-[40vh] sm:h-[55vh] md:h-[75vh]"
           >
-            <h1 className="absolute flex overflow-hidden text-[#cdea68] left-1/2 md:left-full top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9] leading-none tracking-tight text-3xl sm:text-5xl md:text-8xl">
-              {"SALIENCE LABS".split("").map((item, index) => (
+            <h1 className="pointer-events-none absolute flex overflow-hidden text-[#cdea68] font-bold left-1/2 md:left-full top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9] leading-none tracking-tight text-3xl sm:text-5xl md:text-8xl">
+              {"SALIENCE LABS".split(/( )/).map((item, index) => (
                 <motion.span
                   key={index}
                   initial={{ y: "100%" }}
                   animate={cards[0]}
                   transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.03 }}
-                  className="inline-block"
+                  className={item === ' ' ? 'inline-block w-[0.6em]' : 'inline-block'}
                 >
-                  {item}
+                  {item === ' ' ? '\u00A0' : item}
                 </motion.span>
               ))}
             </h1>
@@ -54,23 +54,80 @@ function Featured() {
             onHoverEnd={() => handleHoverEnd(1)}
             className="cardcontainer relative w-full md:w-1/2 h-[40vh] sm:h-[55vh] md:h-[75vh]"
           >
-            <h1 className="absolute flex overflow-hidden text-[#cdea68] right-1/2 md:right-full top-1/2 translate-x-1/2 -translate-y-1/2 z-[9] leading-none tracking-tight text-3xl sm:text-5xl md:text-8xl">
-              {"MEDALLIA EXPERIENCE".split("").map((item, index) => (
+            <h1 className="pointer-events-none absolute flex overflow-hidden text-[#cdea68] right-1/2 md:right-full top-1/2 translate-x-1/2 -translate-y-1/2 z-[9] leading-none font-bold tracking-tight text-3xl sm:text-5xl md:text-8xl">
+                {"MEDALLIA EXPERIENCE".split(/( )/).map((item, index) => (
+                  <motion.span
+                    key={index}
+                    initial={{ y: "100%" }}
+                    animate={cards[1]}
+                    transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.03 }}
+                    className={item === ' ' ? 'inline-block w-[0.6em]' : 'inline-block'}
+                  >
+                    {item === ' ' ? '\u00A0' : item}
+                  </motion.span>
+                ))}
+            </h1>
+            <div className="card w-full h-full rounded-xl overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://ochi.design/wp-content/uploads/2025/08/Med_Website_0.png"
+                alt=""
+              />
+            </div>
+          </motion.div>
+        </div>
+        <div className="cards w-full flex flex-col md:flex-row gap-6 md:gap-10 mt-6 md:mt-10">
+          {/* Card 3 */}
+          <motion.div
+            onHoverStart={() => handleHover(0)}
+            onHoverEnd={() => handleHoverEnd(0)}
+            className="cardcontainer relative w-full md:w-1/2 h-[40vh] sm:h-[55vh] md:h-[75vh]"
+          >
+            <h1 className="pointer-events-none absolute flex overflow-hidden text-[#cdea68] font-bold left-1/2 md:left-full top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9] leading-none tracking-tight text-3xl sm:text-5xl md:text-8xl">
+              {"AH2 MATTHONR ".split(/( )/).map((item, index) => (
                 <motion.span
                   key={index}
                   initial={{ y: "100%" }}
-                  animate={cards[1]}
+                  animate={cards[0]}
                   transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.03 }}
-                  className="inline-block"
+                  className={item === ' ' ? 'inline-block w-[0.6em]' : 'inline-block'}
                 >
-                  {item}
+                  {item === ' ' ? '\u00A0' : item}
                 </motion.span>
               ))}
             </h1>
             <div className="card w-full h-full rounded-xl overflow-hidden">
               <img
                 className="w-full h-full object-cover"
-                src="https://ochi.design/wp-content/uploads/2025/08/Med_Website_0.png"
+                src="https://ochi.design/wp-content/uploads/2024/08/Frame-481692-1-1326x1101.png"
+                alt=""
+              />
+            </div>
+          </motion.div>
+
+          {/* Card 4 */}
+          <motion.div
+            onHoverStart={() => handleHover(1)}
+            onHoverEnd={() => handleHoverEnd(1)}
+            className="cardcontainer relative w-full md:w-1/2 h-[40vh] sm:h-[55vh] md:h-[75vh]"
+          >
+            <h1 className="pointer-events-none absolute flex overflow-hidden text-[#cdea68] right-1/2 md:right-full top-1/2 translate-x-1/2 -translate-y-1/2 z-[9] leading-none font-bold tracking-tight text-3xl sm:text-5xl md:text-8xl">
+                {"VISE".split(/( )/).map((item, index) => (
+                  <motion.span
+                    key={index}
+                    initial={{ y: "100%" }}
+                    animate={cards[1]}
+                    transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.03 }}
+                    className={item === ' ' ? 'inline-block w-[0.6em]' : 'inline-block'}
+                  >
+                    {item === ' ' ? '\u00A0' : item}
+                  </motion.span>
+                ))}
+            </h1>
+            <div className="card w-full h-full rounded-xl overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="https://ochi.design/wp-content/uploads/2025/02/Vise_Front-1-1326x1101.png"
                 alt=""
               />
             </div>
