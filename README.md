@@ -1,12 +1,27 @@
-# React + Vite
+# **Ochi Design Clone**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **fully responsive, visually interactive webpage** inspired by the Ochi Design website. I built it using **React.js**, **Tailwind CSS**, **Framer Motion**, and **Locomotive Scroll**. The project focuses on creating smooth animations, interactive elements, and a clean modern design while keeping everything responsive across devices.
 
-Currently, two official plugins are available:
+### **Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Landing Page:** Eye-catching hero section with responsive typography.
+* **Marquee Section:** Smooth, continuous scrolling banners.
+* **About Section:** Stylish and minimal information layout.
+* **Interactive Eyes:** Eyes that follow the mouse cursor using React hooks.
+* **Featured Projects:** Cards with hover animations using Framer Motion.
+* **Clients / Logos:** Grid of partner logos with badges and ratings.
+* **Footer:** Clean footer with SVG branding and social links.
+* **Smooth Scrolling:** Locomotive Scroll enabled for desktops for a sleek scroll experience.
 
-## Expanding the ESLint configuration
+### **Technical Highlights**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React functional components with **hooks** (`useState`, `useEffect`).
+* Dynamic **Framer Motion animations** for project highlights.
+* Fully responsive design using **Tailwind CSS**.
+* **Dynamic pupil movement** in the Eyes section based on cursor position.
+* Smooth scrolling experience only on larger screens using **Locomotive Scroll** to avoid crashes on mobile.
+* Mobile-first design adjustments to prevent spacing glitches between sections.
+
+### **Purpose**
+
+I built this project to **practice advanced front-end skills**, including animations, responsiveness, and smooth scrolling techniques. It’s also a showcase of **my design-to-code abilities** and attention to interactive UX.
