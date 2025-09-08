@@ -10,12 +10,8 @@
   import LocomotiveScroll from "locomotive-scroll";
 
   function App() {
-    // This hook is great for desktop but can cause issues on mobile,
-    // especially with touch events and performance.
-    // It's often better to rely on native scrolling for mobile.
-    // We can conditionally initialize it.
     React.useEffect(() => {
-      if (window.innerWidth > 1024) { // Only initialize for larger screens
+      if (window.innerWidth > 1024) {
         const locomotiveScroll = new LocomotiveScroll();
       }
     }, []);
